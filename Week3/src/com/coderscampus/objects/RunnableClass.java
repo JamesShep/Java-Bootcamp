@@ -10,27 +10,17 @@ public class RunnableClass {
         int someNumber = 39;
 
         Human jamesSheppard = new Human();
-
-        jamesSheppard.eyeColour = "hazel";
-        jamesSheppard.gender = "male";
-        jamesSheppard.height = "6' 3\"";
-        jamesSheppard.weight = "80";
+        jamesSheppard.setProperties("male", "6' 3\"", "80", "hazel");
 
         System.out.println(jamesSheppard.getInfo());
 
         Human elonMusk = new Human();
-        elonMusk.eyeColour = "blue";
-        elonMusk.gender = "male";
-        elonMusk.height = "6' 1\"";
-        elonMusk.weight = "90";
+        elonMusk.setProperties("male", "6 '1\"", "90", "green");
 
         System.out.println(elonMusk.getInfo());
 
         Human elleHeffernan = new Human();
-        elleHeffernan.eyeColour = "blue";
-        elleHeffernan.gender = "female";
-        elleHeffernan.height = "5' 9\"";
-        elleHeffernan.weight = "60";
+        elleHeffernan.setProperties("female", "5' 9\"", "60", "blue");
 
         System.out.println(elleHeffernan.getInfo());
     }
