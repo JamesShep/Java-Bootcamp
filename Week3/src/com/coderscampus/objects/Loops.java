@@ -6,15 +6,13 @@ public class Loops {
 
     public static void main(String [] args) {
 
-        System.out.println("Square roots");
+//        ForLoopExample forExample1 = new ForLoopExample();
+//        example1.forLoopExample();
 
-        //Initialisation; Termination condition; Increment
-        int a = 0;
-        for (int i = 0; i < 10; i++)
-        {
-            System.out.print(i + ": ");
-            System.out.println(i*i);
-        }
+        WhileLoopExample whileExample1 = new WhileLoopExample();
+//        whileExample1.whileLoopExample1();
+        whileExample1.whileLoopExample2();
+
     }
 
 }
