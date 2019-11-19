@@ -13,10 +13,10 @@ public class RunnableClass {
 
         jamesSheppard.eyeColour = "hazel";
         jamesSheppard.gender = "male";
-        jamesSheppard.height = "6'\"";
+        jamesSheppard.height = "6' 3\"";
         jamesSheppard.weight = "80";
 
-        System.out.println(jamesSheppard);
+        System.out.println(jamesSheppard.getInfo());
 
         Human elonMusk = new Human();
         elonMusk.eyeColour = "blue";
@@ -24,7 +24,15 @@ public class RunnableClass {
         elonMusk.height = "6' 1\"";
         elonMusk.weight = "90";
 
-        System.out.println(elonMusk);
+        System.out.println(elonMusk.getInfo());
+
+        Human elleHeffernan = new Human();
+        elleHeffernan.eyeColour = "blue";
+        elleHeffernan.gender = "female";
+        elleHeffernan.height = "5' 9\"";
+        elleHeffernan.weight = "60";
+
+        System.out.println(elleHeffernan.getInfo());
     }
 
 }

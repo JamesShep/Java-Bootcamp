@@ -5,4 +5,11 @@ public class Human {
     String height;
     String weight;
     String eyeColour;
+
+    // visibility modifier , return type, method name, parameters, scope
+
+    String getInfo () {
+        return "Gender: " + gender + ", Height: " + height + ", Eye Colour: " + eyeColour +
+                ", Weight: " + weight;
+    }
 }
