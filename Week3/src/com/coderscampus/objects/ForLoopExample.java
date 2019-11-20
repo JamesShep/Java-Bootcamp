@@ -17,4 +17,21 @@ public class ForLoopExample {
         System.out.println("For loop completed");
     }
 
+    void incrementExample1() {
+        System.out.println("Incrementing Example");
+        for (int j = 0; j < 10; j++) {
+            System.out.println(j);
+        }
+
+        System.out.println("Decrementing Example");
+        for (int j = 10; j > 0; j--) {
+            System.out.println(j);
+        }
+    }
+
+    void incrementExample2(int j) {
+        System.out.println("Inside incrementExample2 method: j = " + j);
+
+    }
+
 }
