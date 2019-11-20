@@ -11,22 +11,22 @@ public class RunnableClass {
         //Data type, variable name, assignment operation
         Random random = new Random();
 
-        for (int i = 0; i<20; i++)
-            System.out.println("random number is : " + random.nextInt(10));
+//        for (int i = 0; i<20; i++)
+//            System.out.println("random number is : " + random.nextInt(10));
 
+        //Call the no argument constructor
+        Human someOtherHuman = new Human ();
 
-        Human jamesSheppard = new Human();
-        jamesSheppard.setProperties("male", "6' 3\"", "80", "hazel");
+        //Call the 4 argument constructor
+        Human jamesSheppard = new Human("male", "6' 3\"", "80", "hazel");
 
         System.out.println(jamesSheppard.getInfo());
 
-        Human elonMusk = new Human();
-        elonMusk.setProperties("male", "6 '1\"", "90", "green");
+        Human elonMusk = new Human("male", "6 '1\"", "90", "green");
 
         System.out.println(elonMusk.getInfo());
 
-        Human elleHeffernan = new Human();
-        elleHeffernan.setProperties("female", "5' 9\"", "60", "blue");
+        Human elleHeffernan = new Human("female", "5' 9\"", "60", "blue");
 
         System.out.println(elleHeffernan.getInfo());
     }
