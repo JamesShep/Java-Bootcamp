@@ -6,25 +6,35 @@ import java.util.Scanner;
 public class RunnableClass {
 
     public static void main (String [] args) {
+
+        //setup of scanner object
         Scanner input = new Scanner(System.in);
 
+        //variables
+        final int MAX_NUMBER = 101;
+        final int MIN_NUMBER = 0;
         int numberOfGuesses = 5;
         int playerGuessNumber = 0;
         int randomNumber;
-        int playerGuess = 0;
+        int playerGuess;
 
+        //setup of random number object, and assigning max limit
         Random random = new Random();
+        randomNumber = random.nextInt(MAX_NUMBER);
+        //Below line was added for testing
+        //System.out.println(randomNumber);
 
-        randomNumber = random.nextInt(101);
+        //Add +1 if random number is 0 (0 is not allowed for the assignment)
         if (randomNumber == 0) {
             randomNumber++;
         }
 
+        //Start of while loop, looping to value set in numberOfGuesses (5)
         while (playerGuessNumber < numberOfGuesses) {
             System.out.println("Please pick a number between 1 and 100 (Inclusive)");
             playerGuess = input.nextInt();
 
-            if (playerGuess <= 0 || playerGuess >= 101) {
+            if (playerGuess <= MIN_NUMBER || playerGuess >= MAX_NUMBER) {
                 System.out.println("Your guess is not between 1 and 100, please try again");
             }
             else if (playerGuess > randomNumber) {
