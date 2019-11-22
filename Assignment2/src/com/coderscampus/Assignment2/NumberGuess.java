@@ -3,7 +3,7 @@ package com.coderscampus.Assignment2;
 import java.util.Random;
 import java.util.Scanner;
 
-public class RunnableClass {
+public class NumberGuess {
 
     public static void main (String [] args) {
 
