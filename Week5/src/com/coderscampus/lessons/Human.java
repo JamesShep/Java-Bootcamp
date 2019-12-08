@@ -8,7 +8,7 @@ public class Human {
     static int SENIOR_AGE = 65;
 
     //instance variables
-    int age;
+    private int age;
     //not marked as static
     //belongs to an instance
 
