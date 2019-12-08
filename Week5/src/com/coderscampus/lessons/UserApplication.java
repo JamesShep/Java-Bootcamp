@@ -9,13 +9,19 @@ public class UserApplication {
         // Arrays allow us to store multiple objects (or primitives) into
         // ONE variable - Note: an Array is a one type of Data Structure
 
-        User[] users = new User[5];
+        User[] users = new User[10];
 
-        users[0] = userService.createUser("user1", "password1");
-        users[1] = userService.createUser("user2", "password2");
-        users[2] = userService.createUser("user3", "password3");
-        users[3] = userService.createUser("user4", "password4");
-        users[4] = userService.createUser("user5", "password5");
+        for(int i = 0; i < 10; i++) {
+            users[i] = userService.createUser("user" + (i + 1), "password" + (i + 1));
+        }
+
+        System.out.println(users);
+
+//        users[0] = userService.createUser("user1", "password1");
+//        users[1] = userService.createUser("user2", "password2");
+//        users[2] = userService.createUser("user3", "password3");
+//        users[3] = userService.createUser("user4", "password4");
+//        users[4] = userService.createUser("user5", "password5");
 
 //        User user1 = userService.createUser("user1", "password1");
 //        User user2 = userService.createUser("user2", "password2");
