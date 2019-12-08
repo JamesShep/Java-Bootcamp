@@ -9,6 +9,22 @@ public class Human {
 
     //instance variables
     private int age;
+
+    //a getter should return the private value
+    public int getAge () {
+        return age;
+    }
+
+    //setters
+    public void setAge (int age) {
+        if (age < 0 || age > 130) {
+            System.out.println("Invalid range. Please enter a number between 0 - 130");
+            return;
+        }
+        this.age = age;
+    }
+
+
     //not marked as static
     //belongs to an instance
 

@@ -6,8 +6,11 @@ public class AccessModifiers {
     public static void main(String[] args) {
 
         Human jamesSheppard = new Human();
-        jamesSheppard.age = 26;
-
-        System.out.println(jamesSheppard.getStageOfLife());
+        jamesSheppard.setAge(-1);
+        System.out.println(jamesSheppard.getAge());
+        jamesSheppard.setAge(140);
+        System.out.println(jamesSheppard.getAge());
+        jamesSheppard.setAge(26);
+        System.out.println(jamesSheppard.getAge());
     }
 }
