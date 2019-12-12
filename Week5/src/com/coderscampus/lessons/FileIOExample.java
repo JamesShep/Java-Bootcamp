@@ -11,8 +11,17 @@ public class FileIOExample {
         BufferedReader fileReader = null;
         try {
             fileReader = new BufferedReader(new FileReader("Week5/data.txt"));
+
+            String line;
+            while ((line = fileReader.readLine()) != null) {
+                System.out.println(line);
+            }
+
         } catch (FileNotFoundException e) {
             System.out.println("There was a file not found error");
+            e.printStackTrace();
+        } catch (IOException e) {
+            System.out.println("Oops, there was an I/O exception");
             e.printStackTrace();
         } finally {
             try {
